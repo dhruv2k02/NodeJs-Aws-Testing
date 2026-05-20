@@ -10,6 +10,6 @@ app.get('/health', (req, res) => {
     res.status(200).send('Server is healthy');
 });
 
-app.listen(3000, '0.0.0.0', () => {
+app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });
