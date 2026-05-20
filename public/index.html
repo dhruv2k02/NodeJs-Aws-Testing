@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My NodeJS App</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="brand">My NodeJS App</h1>
+        <nav class="nav">
+          <a href="#features">Features</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="hero container">
+      <h2>Fast, simple, and production-ready</h2>
+      <p class="lead">A clean, responsive site served by Express. Deployed on AWS with PM2.</p>
+      <div class="actions">
+        <a class="btn" href="/health">Health Check</a>
+        <a class="btn ghost" href="#features">Learn More</a>
+      </div>
+    </main>
+
+    <section id="features" class="container features">
+      <article>
+        <h3>Responsive Layout</h3>
+        <p>Looks good on any device using modern CSS.</p>
+      </article>
+      <article>
+        <h3>API Ready</h3>
+        <p>Server exposes a small API and static assets for easy integration.</p>
+      </article>
+      <article>
+        <h3>Production Tools</h3>
+        <p>Use PM2 to keep your app running after terminal close or reboot.</p>
+      </article>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> My NodeJS App</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
